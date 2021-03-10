@@ -1,0 +1,207 @@
+body {
+    background-image: url("../imgs/background.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: #fff;
+    margin: 0 0 0 0;
+ }
+.container, #numbers, #letters, #colors {
+
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 1200px;
+    width: 100%;
+
+    min-height: 100%;
+
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+   /* margin-bottom: -200px; */
+}
+
+.header {
+    padding: 20px 10px;
+    margin-bottom: 5px;
+    margin-right: 5%;
+}
+
+.header-text {
+    color: #FFF;
+    font-family: Verdana;
+    font-size: 1.7em;
+    position: relative;
+    left: 40%;
+}
+
+.header-menu {
+    float: right;
+    text-align: right;
+    color: #FFF;
+    font-family: Verdana;
+    font-size: 1.7em;
+}
+
+.hand {
+    cursor: pointer;
+}
+  
+.icon-bar {
+  width: 90%;
+  height: 100px;
+  left: 5%;  
+  opacity: 0.8;
+  bottom: 10px;
+  border-radius: 20px;
+  position: fixed;
+}
+
+.icon-bar a {
+    border-radius: 0px;
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 20px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: Verdana;
+    text-transform: uppercase;
+}
+
+.icon-bar a img {
+    max-height: 30px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.icon-bar a:hover {
+    color: rgb(255, 251, 0);
+}
+
+.active {
+    color: rgb(171, 255, 35) !important;
+}
+
+.tile {
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 15px;
+    width: 90px;
+    height: 90px;
+    margin: 10px;
+}
+
+.tile-green {
+    background: linear-gradient(to bottom right, #339900, #9FF781);
+}
+
+.tile-violet {
+    background: linear-gradient(to bottom right, #9933FF, #FF99CC);
+}
+
+.tile-orange {
+    background: linear-gradient(to bottom right, #FF0000, #FFFF00);
+}
+
+.tile-blue {
+    background: linear-gradient(to bottom right, #013ADF, #66CCFF);
+}
+
+.tile-pink {
+    background: linear-gradient(to bottom right, #FF0000, #F48ECD);
+}
+
+.base-text {
+	text-align: center;
+    color: white;
+    font-family: Verdana;
+}
+
+/* NUMBERS */
+.number {
+		font-size: 55px;
+		font-weight: bold;
+		margin-top: 0px;
+}
+
+.number-10 {
+    font-size: 55px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+.text-number {
+	font-size: 18px;
+}
+
+/* LETTERS */
+.letter {
+    font-size: 25px;
+    margin-top: -9px;
+    font-weight: bold;    
+}
+
+.icon {
+    max-height: 45px;
+	max-width: 45px;    
+    display: block;
+    margin-top: 7px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-text {
+    font-size: 20px;
+    margin-top: -5px;
+}
+
+.text {
+	font-size: 14px;
+	margin-top: 7px;
+}
+
+
+/* MODAL */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #F48ECD;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #F48ECD;
+    width: 60%;
+    font-family: Verdana;
+    border-radius: 20px;
+}
+
+/* The Close Button */
+.close {
+    color: #000;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}

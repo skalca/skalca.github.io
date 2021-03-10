@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>My First English</title>
+
+        <link rel="stylesheet" type="text/css" href="css/my-first-english.css">
+        
+    </head>
+    <body>
+
+        <div class="header">
+            <span class="header-text">MY FIRST ENGLISH</span>
+            <span class="header-menu"><img src="imgs/icons/info.png" onclick="openAboutApp()" style="cursor: pointer;" width="40px"></span>
+        </div>
+
+        <div class="container">            
+            <div id="letters"> </div>
+            <div id="numbers" style="display: none;"> </div>
+            <div id="colors"  style="display: none;"></div>
+
+        </div>
+
+            <div class="icon-bar tile-blue">
+                    <a class="active" href="#" id="aLetters" onclick="changeMode('letters')"><img src="imgs/icons/letters.png"><br>Letters</i></a> 
+                    <a href="#" id="aWords" onclick="changeMode('words')"><img src="imgs/icons/words.png"><br>Words</i></a> 
+                    <!--<a href="#" id="aSpelling" onclick="changeMode('spelling')"><img src="imgs/icons/spelling.png"><br>Spelling</i></a> -->
+                    <a href="#" id="aWhereIs" onclick="whereIs()"><img src="imgs/icons/whereis.png"><br>Where Is?</i></a>
+                    <a href="#" id="aNumbers" onclick="showNumbers()"><img src="imgs/icons/numbers.png"><br>Numbers</i></a>
+                    <a href="#" id="aColors" onclick="showColors()"><img src="imgs/icons/colors.png"><br>Colours</i></a> 
+                  </div>
+
+        <!-- About app -->
+        <div id="modAboutApp" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>About</h3>
+            <p>
+                <br>
+                Voice-over by Tanja
+                <br>
+                All icons from <a href="https://www.flaticon.com">flaticon.com</a>
+            </p>
+            <p>
+                Made with <span style="font-size: 1.4em; color:rgba(221, 54, 54, 0.931)">&#10084;</span> for Neža
+            </p>
+            
+            </div>
+        
+        </div>          
+
+        <script src="js/vars.js"></script>
+        <script src="js/funcs.js"></script>
+    </body>
+</html>
